@@ -52,7 +52,7 @@ Alkmaar
 Allentown
 Almaty
 Alofi
-Alpe d\'Huez
+Alpe d'Huez
 Alta Badia
 Altea
 Altoona
@@ -296,7 +296,7 @@ Cagnes-sur-Mer
 Cairns
 Cairo
 Cala Bona
-Cala d\'Or
+Cala d'Or
 Cala Millor
 Cala Ratjada
 Calais
@@ -436,7 +436,7 @@ Coro
 Coron Town
 Corpus Christi
 Corralejo
-Cortina d\'Ampezzo
+Cortina d'Ampezzo
 Cosenza
 Costa Adeje
 Cotabato City
@@ -880,7 +880,7 @@ Lancaster
 Lancaster (U.S.)
 Landshut
 Lansing
-L\'Aquila
+L'Aquila
 Laredo
 Largo
 Larnaca
@@ -1145,7 +1145,7 @@ Nashville
 Nassau
 Naxos
 Nazareth
-N\'Djamena
+N'Djamena
 Negril
 Neiafu
 Nelson
@@ -1332,7 +1332,7 @@ Porlamar
 Port Alberni
 Port Angeles
 Port Charlotte
-Port d\'Andratx
+Port d'Andratx
 Port Louis
 Port Moresby
 Port of Spain
@@ -1550,7 +1550,7 @@ Sapporo
 Sarajevo
 Sarasota
 Saratoga Springs
-S\'Arenal
+S'Arenal
 Sariaya
 Sarlat-la-Canéda
 Saskatoon
@@ -1616,16 +1616,16 @@ Springfield (Massachusetts)
 Springfield (Missouri)
 Springfield (Oregon)
 St Albans
-St George\'s (Bermuda)
+St George's (Bermuda)
 St. Albans
 St. Anton
 St. Augustine
 St. Cloud
 St. Gallen
 St. George
-St. George\'s (Grenada)
-St. John\'s (Antigua and Barbuda)
-St. John\'s (Canada)
+St. George's (Grenada)
+St. John's (Antigua and Barbuda)
+St. John's (Canada)
 St. Louis
 St. Moritz
 St. Petersburg (U.S.)

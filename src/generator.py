@@ -5,12 +5,12 @@ import random
 class Generator:
     data_type = {}
 
-    result = {}
-
     def __init__(self, data_type):
         self.data_type = data_type
 
-    def generate(self, data, generation_amount=5):
+    def generate(self, data, generation_amount=2):
+
+        result = {}
 
         for i in data:
             item = data.get(i)
@@ -20,18 +20,17 @@ class Generator:
             counter = 0
             values = []
 
-            while counter <= generation_amount:
+            while counter < generation_amount:
                 if data_type is False:
                     rand = self.handle_special_case(data_object.get("name").lower())
-                    values.append(rand)
+                    values.append(rand.replace("'", ""))
                 else:
                     rand = self.get_random_pick_from_file("name_male.txt")
-                    values.append(rand)
+                    values.append(rand.replace("'", ""))
                 counter += 1
 
-            self.result[col_name] = values
-
-        return self.result
+            result[col_name] = values
+        return result
 
     def handle_special_case(self, data_type):
         if data_type == 'firstname':
@@ -40,10 +39,16 @@ class Generator:
             return self.generate_email()
         if data_type == "address":
             return self.generate_address()
+        if data_type == "title":
+            return self.generate_random_words(7)
+        if data_type == "description":
+            return self.generate_random_words(150)
+        if data_type == "datetime":
+            return self.generate_datetime()
 
     def get_random_pick_from_file(self, file_name):
         base_path = os.path.abspath('.')
-        return random.choice(list(open(base_path + '/data/' + file_name))).strip()
+        return random.choice(list(open(base_path + '/data/' + file_name, encoding="utf8"))).strip()
 
     def generate_firstname(self):
         files = ["name_female.txt", "name_male.txt"]
@@ -91,3 +96,20 @@ class Generator:
             city,
             country,
         )
+
+    def generate_random_words(self, max_words, min_words = 1):
+        words = []
+        for i in range(random.randint(min_words, max_words)):
+            words.append(self.get_random_pick_from_file('random_words.txt'))
+        return ' '.join(words)
+
+    def generate_datetime(self):
+        return "{}-{}-{} {}:{}:{}".format(
+            random.randint(2000, 2024),
+            random.randint(1, 12),
+            random.randint(1, 28),
+            random.randint(0, 23),
+            random.randint(0, 59),
+            random.randint(0, 59),
+        )
+

@@ -45,7 +45,7 @@ Comoros
 Congo, Dem. Rep.
 Congo, Rep.
 Costa Rica
-Cote d'Ivoire
+Cote d\'Ivoire
 Croatia
 Cuba
 Curacao
@@ -101,7 +101,7 @@ Jordan
 Kazakhstan
 Kenya
 Kiribati
-Korea, Dem. People's Rep.
+Korea, Dem. People\'s Rep.
 Korea, Rep.
 Kosovo
 Kuwait
